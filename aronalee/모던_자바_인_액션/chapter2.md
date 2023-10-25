@@ -30,7 +30,7 @@ public interface ApplePredicate{
 	boolean test(Apple  apple);
 }
 
-public class GreenApplePredicate{
+public class GreenApplePredicate implements ApplePredicate{
 	public boolean test(Apple apple){
 		return apple.color==COLOR.GREEN
 	}
@@ -53,11 +53,10 @@ public interface ApplePredicate{
 	boolean test(Apple  apple);
 }
 
- 
 // Main.java
 List<Apple> greenApples=filterApple(apples, new ApplePredicate(){
 	public boolean test(Apple apple){
-		return apple.color==COLOR.GREEN
+		return apple.color==COLOR.GREEN;
 	}
 });
 ```
