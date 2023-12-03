@@ -117,8 +117,6 @@ WHERE (id, name) IN (SELECT id, name FROM account WHERE id<100);
 
 ## join 방식 용어
 
-- left join 혹은 
-
 ### inner join
 
 ```sql
@@ -182,7 +180,7 @@ NATURAL JOIN rank_board AS b;
 
 ### driving table, driven table
 
-- join시 테이블을 동시에 접근할 수 없기에 우서눗ㄴ위가 존재
+- join시 테이블을 동시에 접근할 수 없기에 우선순위가 존재
 - driving table: 먼저 검색되는 테이블
 - driven table: driving 테이블을 이용해 데이터를 검색하는 테이블
 
